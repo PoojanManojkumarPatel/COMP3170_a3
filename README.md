@@ -34,7 +34,7 @@ Make sure that project is on your classpath before running this one.
 | `W` / `S` | Move boat forward / backward |
 | `A` / `D` | Turn boat left / right |
 | Arrow keys | Orbit camera around the boat |
-| `Page Up` / `Page Down` | Dolly camera in / out |
+| `U` / `I` | Dolly camera in / out |
 | `,` / `.` | Zoom (FOV) in / out |
 | `[` / `]` | Rotate sun (day) or lamp (night) |
 | `M` | Toggle day / night mode |
