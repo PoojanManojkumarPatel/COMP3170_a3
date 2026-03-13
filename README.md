@@ -4,17 +4,29 @@ A 3D real-time rendered scene built with OpenGL (via LWJGL) in Java, submitted a
 
 The scene features a hovercraft navigating around a procedurally-generated island terrain, complete with animated water, dynamic lighting, texturing, and a controllable third-person camera.
 
-## Dependencies
+## Screenshots
 
-This project relies on utility classes and framework code from the [COMP3170-lwjgl](https://github.com/comp3170/COMP3170-lwjgl) repository (provided as part of the course). That includes (but is not limited to):
+| Day | Night |
+|-----|-------|
+| <img src="images/Screenshot_day.png" width="380"/> | <img src="images/Screenshot_night.png" width="380"/> |
 
-- `Window` — LWJGL window management
-- `IWindowListener` — window lifecycle callbacks
-- `InputManager` — keyboard input handling
-- `ShaderLibrary` / `TextureLibrary` — shader and texture loading/caching
-- `OpenGLException` — OpenGL error handling
+| Wireframe | Water (close-up) |
+|-----------|-----------------|
+| <img src="images/Screenshot_wireframe.png" width="380"/> | <img src="images/Screenshot_closeup_water.png" width="380"/> |
 
-Make sure that project is on your classpath before running this one.
+### Sunlight movement (`[` / `]`)
+
+<img src="images/Screenshot_daylight_1.png" width="250"/> <img src="images/Screenshot_daylight_2.png" width="250"/> <img src="images/Screenshot_daylight_3.png" width="250"/>
+
+*Directional sunlight rotating from east to west, casting changing shadows across the terrain.*
+
+### Torch / headlamp movement (`[` / `]`)
+
+<img src="images/Screenshot_torch_1.png" width="380"/> <img src="images/Screenshot_torch_2.png" width="380"/>
+
+*Point spotlight mounted on the boat, rotating left and right in night mode with distance attenuation.*
+
+---
 
 ## Features
 
@@ -34,13 +46,25 @@ Make sure that project is on your classpath before running this one.
 | `W` / `S` | Move boat forward / backward |
 | `A` / `D` | Turn boat left / right |
 | Arrow keys | Orbit camera around the boat |
-| `U` / `I` | Dolly camera in / out |
+| `Page Up` / `Page Down` | Dolly camera in / out |
 | `,` / `.` | Zoom (FOV) in / out |
 | `[` / `]` | Rotate sun (day) or lamp (night) |
 | `M` | Toggle day / night mode |
 | `B` | Toggle wireframe mode |
 | `N` | Normals debug view |
 | `V` | Return to normal view |
+
+## Dependencies
+
+This project relies on utility classes and framework code from the [COMP3170-lwjgl](https://github.com/comp3170/COMP3170-lwjgl) repository (provided as part of the course). That includes (but is not limited to):
+
+- `Window` — LWJGL window management
+- `IWindowListener` — window lifecycle callbacks
+- `InputManager` — keyboard input handling
+- `ShaderLibrary` / `TextureLibrary` — shader and texture loading/caching
+- `OpenGLException` — OpenGL error handling
+
+Make sure that project is on your classpath before running this one.
 
 ## Tech Stack
 
